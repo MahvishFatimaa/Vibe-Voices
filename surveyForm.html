@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(218, 188, 233);
+            
+        }
+        .container{
+          display: flex;
+          justify-content: center;
+
+        }
+        
+        form{
+            background-color: white;
+            padding: 10px ;
+            width: 80vh;
+            box-shadow: 3px 5px 10px 3px rgba(43, 2, 45, 0.5);
+            margin: 0.5rem;
+            
+           
+        }
+        
+        .form2{
+            text-align: left;
+            margin-bottom: 20px;
+           
+        }
+        label {
+			display: block;
+			margin-bottom: 1px;
+		}
+        button {
+			background-color:#e2aeec;
+			border: 1px solid rgb(117, 7, 82);
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+    .Singer{
+      margin: 13px;
+      
+    }
+    .series{
+      margin: 13px;
+
+    }
+    .FRIEND{
+      margin: 13px;
+
+    }
+    .paint{
+      margin: 13px;
+
+    }
+    #role{
+      width: 100%;
+      height: 2rem;
+      margin-top: 1rem;
+      
+    }
+    .detail{
+      width: 100%;
+      height: 2rem;
+      margin-top: 1rem;
+
+    }
+    .comment{
+      width: 100%;
+      height: 3rem;
+      margin-top: 1rem;
+
+    }
+       
+    </style>
+</head>
+<body>
+    <h3  style="color: rgb(114, 57, 114);"><i>Exloration of personal sytle</i></h3>
+    <h1 style="color: rgb(250, 247, 249);"><b>Vibes & Voices!!</b></h1>
+    <div class="container">
+    <form id="form">
+
+
+     <div class="form2">
+        <label for="name" id="name">Name :</label>
+        <input type=" text" class="detail" placeholder="  Enter Your Name" required />
+     </div>
+
+
+     <div class="form2">
+        <label for="email" id="email">Email :</label>
+        <input type=" email" class="detail" name="email" placeholder="  Enter Your Email"  />
+     </div>
+
+
+     <div class="form2">
+        <label for="age" id="age">Age :</label>
+        <input type="number" class="detail" name="age1" placeholder="  Enter Your Age" required />
+     </div>
+
+
+     <div class="form2">
+        <label for="username" id="username">Instagram Handle :</label>
+        <input type="username" class="detail" name="username" placeholder="  Enter Your UserID">
+     </div>
+     <div class="form2">
+      <label for="username" id="username">Pinterest Handle :</label>
+      <input type="username" class="detail" name="username" placeholder="  Enter Your UserID" >
+   </div>
+
+     <div class="form2">
+       <label for="role" id="role1">Which option best describes YOU?</label>
+       <select name="role" id="role">
+        <option value="Versatile">Versatile</option>
+        <option value="Complicated">Complicated</option>
+        <option value="Easygoing">Easygoing</option>
+        <option value="Optimistic">Optimistic</option>
+        <option value="Curious">Curious</option>
+        <option value="Unpredictable">Unpredictable</option>
+        <option value="Authentic">Authentic</option>
+        <option value="Balanced">Balanced</option>
+        <option value="Messy">Messy</option>
+       </select>
+     </div>
+
+     <div class="form2">
+       <label for="paint">Do you have a deep appreciation for poetry, art, drawings, and other forms of creative expression?</label>
+       <input type="radio" name="paint" class="paint" >Yes, I love immersing myself in artistic endeavors!</input><br>
+       <input type="radio"  name="paint"  class="paint" >I enjoy them occasionally for inspiration</input><br>
+       <input type="radio"  name="paint"  class="paint">Not really my thing, but I respect the creativity!</input>
+     </div>
+
+      
+
+
+     <div class="form2">
+       <label>Have you experienced the iconic world of the 'Friends' series? </label>
+      <label for="series">
+       <input type="radio" name="Fav-sitcom" class="series" >Absolutely, I'm a devoted fan!</input>
+      </label>
+      <label for="series">
+       <input type="radio"  name="Fav-sitcom" class="series">I've caught a glimpse here and there</input>
+      </label>
+      <label for="series">
+       <input type="radio"  name="Fav-sitcom" class="series">Not yet, but it's on my watchlist!</input>
+      </label>
+      <label for="series">
+        <input type="radio"  name="Fav-sitcom" class="series">No, its not my cup of tea</input>
+       </label>
+     </div>
+     <div class="form2">
+      <label>How do you see the World? </label>
+     <label for="series">
+      <input type="radio" name="perception-of-seeinglife" class="series" >Through rose-tinted glasses</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">As a wild adventure waiting to happen</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">Like a giant playground</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">As a canvas for endless creativity</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">Through a lens of empathy and understanding</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">As a puzzle waiting to be solved</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">Through the lens of curiosity and wonder</input>
+     </label>
+     <label for="series">
+      <input type="radio"  name="perception-of-seeinglife" class="series">Like a chaotic dance of randomness and order</input>
+     </label>
+    </label>
+    <label for="series">
+     <input type="radio"  name="perception-of-seeinglife" class="series">Like a book with endless chapters waiting to be explored</input>
+    </label>
+    <label for="series">
+     <input type="radio"  name="perception-of-seeinglife" class="series">As a stage for making meaningful connections</input>
+    </label>
+    </div>
+    <div class="form2">
+      <label for="comment"><b>
+        "Your favourite music artist?"  </b>
+      </label>
+      <textarea placeholder=" Tell!!" name="fav-artist" class="comment"></textarea>
+   </div>
+   <div class="form2">
+    <label for="comment"><b>
+      "What are some of your favourite songs?"  </b>
+    </label>
+    <textarea placeholder=" Share!!" name="fav-song" class="comment"></textarea>
+ </div>
+
+  
+
+     <div class="form2">
+        <label for="comment"><b>
+          "If you could have any superpower, what would it be and why?"  </b>
+        </label>
+        <textarea placeholder=" Express!!" name="super-power" class="comment"></textarea>
+     </div>
+     <div class="form2">
+      <label for="comment"><b>
+        "Who is your favourite go-to person?"  </b>
+      </label>
+      <textarea placeholder=" Please explain!!" name="fav-person" class="comment"></textarea>
+   </div>
+
+      <input type="submit" value="submit">
+    </form>
+  </div>
+</body><script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('form');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Collect form data
+      const formData = new FormData(form);
+
+      // Send form data to server
+      fetch('/submit-form', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Form submitted successfully!');
+          form.reset(); // Reset form after successful submission
+        } else {
+          alert('Form submission failed!');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Form submission failed!');
+      });
+    });
+  });
+</script>
+
+</html>
